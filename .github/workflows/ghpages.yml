@@ -26,6 +26,7 @@ jobs:
                   npm install -g expo-cli
                   npm install
                   expo build:web
+                  echo expo.ps.gh.bornais.ca > web-build/CNAME
             - name: Deploy to GitHub Pages
               if: success()
               uses: crazy-max/ghaction-github-pages@v2
